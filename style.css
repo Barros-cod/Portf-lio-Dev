@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Asap",
+        sans-serif;
 }
 
 body {
@@ -50,12 +52,14 @@ body {
 
 .perfil-txt p {
     margin-top: 60px;
-    font-family: Inconsolata;
+    font-family: "Inconsolata",
+        monospace;
     font-size: 20px;
 }
 
 .perfil-txt h1 {
-    font-family: Asap;
+    font-family: "Asap",
+        sans-serif;
     font-size: 60px;
     margin-bottom: 20px;
 }
@@ -141,7 +145,7 @@ span {
     background-origin: border-box;
     background-clip: padding-box, border-box;
     border-radius: 10px;
-    transform: translateY(-2px);
+    transform: translateY(-4px);
     transition: transform 0.3s ease;
 }
 
@@ -176,4 +180,149 @@ span {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+/* meus serviços */
+.servicos {
+    background-color: #0D0E11;
+    height: 480px;
+}
+
+.servicos-txt {
+    margin-top: 120px;
+    margin-bottom: 80px;
+    padding: 40px;
+}
+
+.servicos-txt p {
+    font-size: 20px;
+}
+
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.servico-card {
+    border: 2px solid #16181D;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    margin: 20px;
+}
+
+.servico-card img {
+    margin-bottom: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.card-service p {
+    font-family: "Asap",
+        sans-serif;
+    font-size: 13px;
+    color: #C0C4CE;
+}
+
+.card-service h3 {
+    font-family: "Asap",
+        sans-serif;
+    font-size: 16px;
+}
+
+/* Contatos  */
+
+.footer {
+    background: url(img/fundo2.png) no-repeat center;
+    background-size: cover;
+    padding: 20px;
+}
+
+.footer-txt {
+    margin-top: 120px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.footer-txt h3 {
+    margin: 8px;
+}
+
+
+
+.links-redes {
+    display: grid;
+    justify-content: center;
+}
+
+.socialbutton {
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    background-color: #292C34;
+    width: 400px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    border: 1px solid transparent;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+.socialbutton:hover {
+    cursor: pointer;
+    background-image:
+        linear-gradient(#292C34, #292C34),
+        linear-gradient(to bottom, #3996DB, #1A5F8E);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.icon-mask {
+    width: 24px;
+    height: 24px;
+    background-color: #FFFFFF;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    transition: background 0.4s ease;
+}
+
+.socialbutton:hover .icon-mask {
+    background-image: linear-gradient(to bottom, #3996DB, #1A5F8E);
+    background-color: transparent;
+}
+
+.linkedinlogo {
+    -webkit-mask-image: url("img/Linkedinlogo.svg");
+    mask-image: url('img/Linkedinlogo.svg');
+    margin-right: 12px;
+}
+
+.instagramlogo {
+    -webkit-mask-image: url('img/instagramlogo.svg');
+    mask-image: url('img/instagramlogo.svg');
+    margin-right: 12px;
+}
+
+.githublogo {
+    -webkit-mask-image: url('img/githublogo.svg');
+
+    mask-image: url('img/githublogo.svg');
+    margin-right: 12px;
+}
+
+.emaillogo {
+    -webkit-mask-image: url('img/Envelope.svg');
+    mask-image: url('img/Envelope.svg');
+    margin-right: 12px;
+}
+
+.seta-cima {
+    margin-left: auto;
 }
