@@ -8,37 +8,49 @@ body {
     text-align: center;
     background-size: cover;
     color: white;
+    background-color: #16181d;
 }
 
+
+/* Perfil usuario */
 
 .container-pefil {
     background: url(img/fundo.png) no-repeat center;
     background-size: cover;
-    height: 90vh;
+
+}
+
+.icon-code {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 
 .perfil-foto {
-    display: contents;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 87px;
-    height: 87px;
-    outline: 3px solid #E3646E;
-    border-radius: 50%;
+    width: 120px;
+    height: 140px;
+    position: sticky;
 }
 
-.perfil-foto img {
+.perfil-img {
     margin: 100px 0 60px;
     width: 89px;
     height: 89px;
     outline: 3px solid #E3646E;
     border-radius: 50%;
     padding: 3px;
+    border: 1px solid rgb(37, 27, 27);
+    position: sticky;
+
 }
 
 .perfil-txt p {
-    font-family: inconsolate;
+    margin-top: 60px;
+    font-family: Inconsolata;
     font-size: 20px;
 }
 
@@ -79,16 +91,26 @@ body {
     cursor: default;
 }
 
-.projects {
-    background-color: #16181d;
-    min-height: 100vh;
+
+/* area dos projetos */
+
+
+.projects-txt {
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+.projects-txt p {
+    font-size: 20px;
+}
+
+.projects-txt h2 {
+    font-size: 30px;
 }
 
 span {
     color: #E3646E;
 }
-
-/* area dos projetos */
 
 .project-grid {
     display: grid;
@@ -115,11 +137,11 @@ span {
     border: 1px solid transparent;
     background-image:
         linear-gradient(#292C34, #292C34),
-        linear-gradient(to bottom, #494e5e, #292C34, #8D8D99, #C0C4CE);
+        linear-gradient(to bottom, #494e5e, #3f4657, #8D8D99, #C0C4CE);
     background-origin: border-box;
     background-clip: padding-box, border-box;
     border-radius: 10px;
-    transform: translateY(-5px);
+    transform: translateY(-2px);
     transition: transform 0.3s ease;
 }
 
@@ -152,7 +174,6 @@ span {
     font-size: 0.9rem;
     color: #666;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
